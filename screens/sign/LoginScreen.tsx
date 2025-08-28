@@ -8,7 +8,7 @@ import {
 import type { SignStackScreenProps, } from '../../types';
 import { useNavigation } from '@react-navigation/native';
 
-const LoginScreen = () => {
+export const LoginScreen = () => {
   const stackNav = useNavigation<SignStackScreenProps>();
 
   return (
@@ -23,7 +23,7 @@ const LoginScreen = () => {
       </View>
       <TouchableOpacity
         style={styles.button}
-        // onPress={() => tabNav.navigate('Home')}
+        // onPress={test}
       >
         <Text style={styles.buttonText}>로그인</Text>
       </TouchableOpacity>
@@ -92,5 +92,3 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
 });
-
-export default LoginScreen;

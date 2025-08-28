@@ -1,7 +1,5 @@
 import { Text } from 'react-native';
 
-const ProfileScreen = () => {
+export const ProfileScreen = () => {
   return <Text>Mypage Screen</Text>;
 };
-
-export default ProfileScreen;
